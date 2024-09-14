@@ -1,0 +1,99 @@
+.videoContainer {
+  position: relative;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.thumbnailWrapper {
+  position: relative;
+  width: 300px; /* 비디오와 썸네일의 폭 */
+  height: 200px; /* 비디오와 썸네일의 높이 */
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.previewWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.previewVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 10;
+  object-fit: cover;
+}
+
+.thumbnailWrapper:hover .previewVideo {
+  opacity: 1;
+}
+
+.sliderContainer {
+  position: absolute;
+  bottom: 8.5px; /* 비디오 하단에서 약간 위로 조정 */
+  left: 0; /* 비디오 왼쪽에 맞추기 */
+  width: 100%; /* 비디오의 폭에 맞춤 */
+  height: 30px; /* 슬라이더 컨테이너의 높이 */
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20; /* 링크 위에 위치 */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.videoContainer:hover .sliderContainer {
+  opacity: 1;
+}
+
+.sliderBlock {
+  position: relative;
+  width: 90%; /* 슬라이더 블록의 폭을 컨테이너에 맞춤 */
+  height: 5px; /* 슬라이더의 높이 */
+  background: transparent; /* 투명 블록 */
+  cursor: pointer;
+  z-index: 21; /* 링크 위에 위치 */
+}
+
+.slider {
+  width: 100%;
+  height: 5px;
+  -webkit-appearance: none;
+  background: #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 22; /* 슬라이더 핸들 */
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #333;
+  cursor: pointer;
+}
+.durationCover{
+  position:fixed;
+  z-index: 30;
+  color:white;
+}

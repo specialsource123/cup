@@ -1,0 +1,58 @@
+.container {
+  margin-top: 2rem;
+}
+
+.header {
+  padding: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  background-color: #f8f9fa;
+}
+
+.articleSection {
+  margin-bottom: 3rem;
+}
+
+.articleHeader {
+  margin-bottom: 1rem;
+}
+
+.articleTitle {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.articleDate {
+  color: #6c757d;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.sectionDivider {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.commentSection {
+  margin-top: 2rem;
+}
+
+.commentTable {
+  width: 100%;
+}
+
+.commentTable th, .commentTable td {
+  text-align: left;
+}
+
+.btnPrimary {
+  margin-right: 0.5rem;
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+}
+
+.textArea {
+  width: 100%;
+}
