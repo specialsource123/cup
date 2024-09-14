@@ -2,9 +2,7 @@
   "name": "cup",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sawoojoha.github.io/",
   "dependencies": {
-    "proxy": "https://angelboo.store",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -61,6 +59,5 @@
     "video.js": "^8.10.0",
     "webpack": "^5.90.3",
     "webpack-cli": "^5.1.4"
-  },
-  "proxy": "https://angelboo.store/"
+  }
 }
